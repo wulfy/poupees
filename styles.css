@@ -1,0 +1,304 @@
+
+
+.parallax__layer--deep {
+    -webkit-transform: translateZ(-800px) scale(4);
+    transform: translateZ(-800px) scale(4);
+    z-index: 2 ;
+    
+  }
+
+  .group3{
+  	z-index:2;
+  }
+  .group2{
+  	z-index: 3;
+}
+  }
+  .group1{
+  	z-index: 4;
+  }
+
+ .debug-on .parallax__layer--deep{
+ 	 background-color: blue;
+ }
+  .debug-on .parallax__layer--back{
+ 	background-color: green;
+ }
+  .debug-on .parallax__layer--base{
+ 	background-color: red;
+ }
+  .debug-on .parallax__layer--fore{
+ 	background-color: yellow;
+ }
+
+   .parallax__layer--fore {
+    -webkit-transform: translateZ(90px) scale(.7);
+    transform: translateZ(90px) scale(.7);
+    z-index: 5;
+    
+  }
+  .parallax__layer--forer {
+    -webkit-transform: translateZ(90px) scale(.7);
+    transform: translateZ(90px) scale(.7);
+    z-index: 5;
+    
+  }
+
+body{
+  margin:0;
+}
+@media only screen and (min-width: 800px){
+	body{
+		font-size: 1.7vw;
+	}
+}
+@media only screen and (max-width: 800px){
+	body{
+		font-size: 10px;
+	}
+}
+
+    .parallax__layer--base {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    z-index: 4;
+    
+  }
+
+ .parallax__layer--back{
+ 	    -webkit-transform: translateZ(-300px) scale(2);
+    transform: translateZ(-300px) scale(2);
+    height: 100vh;
+    z-index: 3;
+ 
+ }
+
+.parallax__layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+}
+
+.parallax__group{
+    position: relative;
+    height: 500px;
+    height: 100vh;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+
+}
+
+
+.title_letter{
+  width: 0.5em;
+}
+
+#content{
+   font-size: 1em;
+   /*background: url(./images/fond_pastel.jpeg) repeat;*/
+   background: url(https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTE5l9xtQcM4D7-DNcOrr-y7WlQimp0f9j1P0kadap4yMstZiXH2A) repeat;
+   /*background: url(https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRMMk2wNSD7H64Nkr5h-BcK3bJlwYLUrUbrBz4FtK93sAiO1JPEeQ) repeat;*/
+   /*background-color: #FBEFFB;*/
+   /*https://babacool.files.wordpress.com/2011/04/rose-pois-blancs.jpg*/
+
+}
+
+@font-face {
+  font-family: "baby doll";
+  src: url("./fonts/BabyDoll.ttf");
+}
+
+.parallax {
+      height: 500px; /* fallback for older browsers */
+     	height: 100vh;
+      overflow-x: hidden;
+      overflow-y: auto;
+      -webkit-perspective: 300px;
+      perspective: 300px;
+      /*font-size: 200%;*/
+    }
+.main_title{
+	font-family: "baby doll";
+	font-size: 5em;
+	color: white;
+	text-align: center;
+	width: 100%;
+  text-shadow: 2px 2px #ff0000;
+}
+
+.title{
+	font-family: "baby doll";
+	width: 100%;
+	font-size: 2em;
+  color: white;
+	padding-bottom: 10px;
+  text-shadow: 2px 2px #ff0000;
+}
+
+.center{
+	text-align: center;
+}
+
+header{
+	    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 300;
+   
+    background-color: transparent;
+
+
+}
+.align-middle {
+	text-align: center;
+}
+
+.align-right{
+	text-align:right;
+}
+
+.right{
+	float: right;
+}
+
+.left{
+	float: left;
+}
+
+.vertical-middle{
+
+}
+
+.bloc-text{
+	margin-top: 40vh;
+display:inline-block;
+line-height:1.2; /* on rétablit le line-height */
+text-align:center; /* ... et l'alignement du texte */ 
+width: 50%;
+}
+.bloc-text p{ 
+
+padding:0.5em; /* aération interne de la zone de texte */
+
+}
+
+.image img{
+	max-width: 100%;
+	max-height: 70vh;
+}
+
+.last{
+	margin-left: 25%;
+	margin-right: 25%;
+}
+
+.image{
+	margin-top: 8em;
+	width: 50%;
+	text-align: center;
+}
+
+.images_bloc img{
+  height: 100%;
+	max-width: 30vw;
+}
+
+  .debug-on .parallax__group {
+    -webkit-transform: translate3d(800px, 0, -800px) rotateY(30deg);
+    transform: translate3d(700px, 0, -800px) rotateY(30deg);
+ }
+
+ #animated_pelote{
+     position: absolute;
+    width: auto;
+    height: 15vh;
+    z-index: 10;
+    top: 4em;
+    right: 5.5em;
+ }
+
+ .animated_element{
+ }
+
+ #fil{
+  background-color: black;
+  width: 1px;
+  height: 70%;
+  top: -50px;
+ }
+
+ #pelote{
+  position:absolute;
+  bottom: 8%;
+  left: -10px;
+ }
+
+ #pelote img{
+  width: 40px;
+ }
+
+ .animate_pelote{
+balance_pelote 3s infinite ease-in-out; 
+-webkit-animation: balance_pelote 3s infinite ease-in-out; 
+ }
+
+ .animate{
+balance 3s infinite ease-in-out; 
+-webkit-animation: balance 3s infinite ease-in-out; 
+-moz-animation: balance 3s infinite ease-in-out; 
+-ms-animation: balance 3s infinite ease-in-out; 
+-o-animation: balance 3s infinite ease-in-out;
+
+-webkit-transition: opacity .5s ease;
+    -moz-transition: opacity .5s ease;
+    -ms-transition: opacity .5s ease;
+    -o-transition: opacity .5s ease;
+
+ }
+
+ @-webkit-keyframes balance_pelote {
+                    0% { -webkit-transform: translate(0px,-15px) rotate(-50deg); }
+                    50% { -webkit-transform: translate(0px,15px)  rotate(50deg); }
+                    100% { -webkit-transform: translate(0px,-15px) rotate(-50deg); }
+                }
+                            @-moz-keyframes balance {
+                    0% { -moz-transform: rotate(-2deg); }
+                    50% { -moz-transform: rotate(0deg); }
+                    100% { -moz-transform: rotate(2deg); }
+                }
+                            @-ms-keyframes balance {
+                    0% { -ms-transform: rotate(-2deg); }
+                    50% { -ms-transform: rotate(0deg); }
+                    100% { -ms-transform: rotate(2deg); }
+                }
+                            @-o-keyframes balance {
+                    0% { -o-transform: rotate(-2deg); }
+                    50% { -o-transform: rotate(0deg); }
+                    100% { -o-transform: rotate(2deg); }
+                }
+
+ @-webkit-keyframes balance {
+                    0% { -webkit-transform: rotate(-1.5deg); }
+                    50% { -webkit-transform: rotate(1.5deg); }
+                    100% { -webkit-transform: rotate(-1.5deg); }
+                }
+                            @-moz-keyframes balance {
+                    0% { -moz-transform: rotate(-2deg); }
+                    50% { -moz-transform: rotate(0deg); }
+                    100% { -moz-transform: rotate(2deg); }
+                }
+                            @-ms-keyframes balance {
+                    0% { -ms-transform: rotate(-2deg); }
+                    50% { -ms-transform: rotate(0deg); }
+                    100% { -ms-transform: rotate(2deg); }
+                }
+                            @-o-keyframes balance {
+                    0% { -o-transform: rotate(-2deg); }
+                    50% { -o-transform: rotate(0deg); }
+                    100% { -o-transform: rotate(2deg); }
+                }
